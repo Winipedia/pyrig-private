@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-private"
-version = "0.1.1"
+version = "0.1.2"
 description = "A pyrig plugin for private repository functionality."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -50,12 +50,9 @@ dev = [
   "pre-commit-hooks>=6.0.0",
   "prek>=0.5.4",
   "pyflakes>=4.0.1",
-  "pyrig>=18.94.2",
-  "pyrig-codecov>=3.17.45",
-  "pyrig-codeql>=1.1.10",
-  "pyrig-fixtures>=2.25.2",
+  "pyrig>=18.95.1",
+  "pyrig-opensource>=1.0.0",
   "pyrig-private-overrides>=1.0.0",
-  "pyrig-public>=1.1.1",
   "pyrig-pypi>=3.20.47",
   "pytest>=9.1.1",
   "pytest-cov>=7.1.0",

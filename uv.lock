@@ -775,8 +775,26 @@ wheels = [
 ]
 
 [[package]]
+name = "pyrig-opensource"
+version = "1.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyrig" },
+    { name = "pyrig-codecov" },
+    { name = "pyrig-codeql" },
+    { name = "pyrig-fixtures" },
+    { name = "pyrig-public" },
+    { name = "pyrig-runtime" },
+    { name = "typer" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ce/42/88d31b8f2e4adc4ed66b502e5e44beb51422a69b977863eccfd5f82fa638/pyrig_opensource-1.0.0.tar.gz", hash = "sha256:47a3bd8c432b5dcbd769222ff3513e7640481fb3ffb083a1b155f36ef5ab5e9b", size = 5346, upload-time = "2026-10-01T22:25:06.52Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/70/9f/45105214db07c85b28a7eeea47641c4e21d22f2ead039c39e8b6bd1e44f0/pyrig_opensource-1.0.0-py3-none-any.whl", hash = "sha256:e0b0f7c5482a36d3a2c605e01a15052b77d2b4b405b36c6cf38b5e96d8c9dab4", size = 7483, upload-time = "2026-10-01T22:25:05.153Z" },
+]
+
+[[package]]
 name = "pyrig-private"
-version = "0.1.1"
+version = "0.1.2"
 source = { editable = "." }
 dependencies = [
     { name = "pyrig" },
@@ -794,11 +812,8 @@ dev = [
     { name = "prek" },
     { name = "pyflakes" },
     { name = "pyrig" },
-    { name = "pyrig-codecov" },
-    { name = "pyrig-codeql" },
-    { name = "pyrig-fixtures" },
+    { name = "pyrig-opensource" },
     { name = "pyrig-private-overrides" },
-    { name = "pyrig-public" },
     { name = "pyrig-pypi" },
     { name = "pytest" },
     { name = "pytest-cov" },
@@ -832,12 +847,9 @@ dev = [
     { name = "pre-commit-hooks", specifier = ">=6.0.0" },
     { name = "prek", specifier = ">=0.5.4" },
     { name = "pyflakes", specifier = ">=4.0.1" },
-    { name = "pyrig", specifier = ">=18.94.2" },
-    { name = "pyrig-codecov", specifier = ">=3.17.45" },
-    { name = "pyrig-codeql", specifier = ">=1.1.10" },
-    { name = "pyrig-fixtures", specifier = ">=2.25.2" },
+    { name = "pyrig", specifier = ">=18.95.1" },
+    { name = "pyrig-opensource", specifier = ">=1.0.0" },
     { name = "pyrig-private-overrides", specifier = ">=1.0.0" },
-    { name = "pyrig-public", specifier = ">=1.1.1" },
     { name = "pyrig-pypi", specifier = ">=3.20.47" },
     { name = "pytest", specifier = ">=9.1.1" },
     { name = "pytest-cov", specifier = ">=7.1.0" },
