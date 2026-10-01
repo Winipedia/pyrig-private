@@ -11,7 +11,7 @@ before reporting, or mention your version if you can't.
 issues, discussions, or pull requests.**
 
 Instead, report a vulnerability to:
-<winipedia@gmx.de>
+[GitHub's private vulnerability reporting](https://github.com/Winipedia/pyrig-private/security/advisories/new)
 
 Please include:
 
