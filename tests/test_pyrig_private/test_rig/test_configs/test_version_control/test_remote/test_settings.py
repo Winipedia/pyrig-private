@@ -17,4 +17,5 @@ class TestRepositorySettingsConfigFile:
 
     def test_visibility(self) -> None:
         """Test the configured repository visibility."""
-        assert RepositorySettingsConfigFile.I.visibility() == "private"
+        assert RepositorySettingsConfigFile().visibility() == "private"
+        assert RepositorySettingsConfigFile.I.visibility() == "public"
