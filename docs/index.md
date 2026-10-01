@@ -42,6 +42,38 @@
 
 ---
 
-> Add your description here
+> A pyrig plugin for private repository functionality.
 
 ---
+
+## Overview
+
+`pyrig-private` extends pyrig's generated GitHub configuration with settings
+intended for private repositories. Install the plugin as a development
+dependency, then run `pyrig sync`; pyrig discovers and applies the plugin
+overrides automatically.
+
+```bash
+uv add pyrig-private --dev
+uv run pyrig sync
+```
+
+This updates the local configuration files. GitHub is updated when the
+generated `.github/configure.sh` runs, such as in pyrig's deployment workflow.
+
+## Repository visibility
+
+The generated configuration adds `"visibility": "private"` to the repository
+settings. When `.github/configure.sh` applies those settings, GitHub updates
+the repository through its repository settings API. This is enforced each time
+the configuration script runs.
+
+!!! warning "Important"
+    Changing a repository's visibility can expose or restrict its code and
+    history. Confirm the repository contents and any organization visibility
+    policy before applying the setting.
+
+## API Reference
+
+For class- and method-level details, see the [API Reference](api.md), generated
+automatically from the source.

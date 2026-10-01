@@ -1,14 +1,15 @@
 {
   "repository": {
     "name": "pyrig-private",
-    "description": "Add your description here",
+    "description": "A pyrig plugin for private repository functionality.",
     "homepage": "https://Winipedia.github.io/pyrig-private",
     "default_branch": "main",
     "delete_branch_on_merge": true,
     "allow_update_branch": true,
     "allow_merge_commit": false,
     "allow_rebase_merge": true,
-    "allow_squash_merge": true
+    "allow_squash_merge": true,
+    "visibility": "private"
   },
   "rulesets": [
     {

@@ -42,6 +42,30 @@
 
 ---
 
-> Add your description here
+> A pyrig plugin for private repository functionality.
 
 ---
+
+## Overview
+
+`pyrig-private` is a [pyrig](https://github.com/Winipedia/pyrig) plugin that
+configures GitHub features for private repositories.
+
+## What it adds
+
+- **Private visibility** — configures the repository to be private.
+
+## Usage
+
+```bash
+uv add pyrig-private --dev
+uv run pyrig sync
+```
+
+Applying the generated repository settings makes the repository private. Review
+its contents and GitHub's visibility-change consequences before applying them.
+
+## Documentation
+
+See the [documentation site](https://Winipedia.github.io/pyrig-private) for
+configuration details.
