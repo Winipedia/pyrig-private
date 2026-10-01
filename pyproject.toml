@@ -1,0 +1,123 @@
+[project]
+name = "pyrig-private"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = [
+  "LICENSE",
+]
+authors = [
+  { name = "Winipedia", email = "winipedia@gmx.de" },
+]
+maintainers = [
+  { name = "Winipedia", email = "winipedia@gmx.de" },
+]
+keywords = [
+  "pyrig",
+]
+classifiers = [
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Typing :: Typed",
+]
+dependencies = [
+  "pyrig-runtime>=3.24.2",
+]
+
+[project.urls]
+Changelog = "https://github.com/Winipedia/pyrig-private/releases"
+Documentation = "https://Winipedia.github.io/pyrig-private"
+Homepage = "https://github.com/Winipedia/pyrig-private"
+Issues = "https://github.com/Winipedia/pyrig-private/issues"
+Source = "https://github.com/Winipedia/pyrig-private"
+
+[project.scripts]
+pyrig-private = "pyrig_runtime.rig.cli.main:main"
+
+[dependency-groups]
+dev = [
+  "actionlint-py>=1.7.12.25",
+  "bandit>=1.9.4",
+  "deptry>=0.25.1",
+  "detect-secrets>=1.5.0",
+  "mkdocstrings[python]>=1.0.6",
+  "pre-commit-hooks>=6.0.0",
+  "prek>=0.5.4",
+  "pyflakes>=4.0.1",
+  "pyrig>=18.94.2",
+  "pyrig-codecov>=3.17.45",
+  "pyrig-codeql>=1.1.10",
+  "pyrig-fixtures>=2.25.2",
+  "pyrig-pypi>=3.20.47",
+  "pytest>=9.1.1",
+  "pytest-cov>=7.1.0",
+  "pytest-randomly>=5.0.0",
+  "pytest-xdist>=3.8.0",
+  "ruff>=0.16.9",
+  "rumdl>=0.2.78",
+  "ryl>=0.22.0",
+  "shellcheck-py>=0.11.0.1",
+  "shfmt-py>=4.2.0",
+  "tombi>=1.7.0",
+  "ty>=0.0.84",
+  "typos>=1.50.3",
+  "zensical>=0.0.67",
+  "zizmor>=1.30.1",
+]
+
+[build-system]
+requires = [
+  "uv-build",
+]
+build-backend = "uv_build"
+
+[tool.deptry]
+root = "src"
+
+[tool.deptry.per_rule_ignores]
+DEP002 = [
+  "pyrig-runtime",
+]
+
+[tool.pytest]
+addopts = [
+  "--cov-branch",
+  "--cov-fail-under=100",
+  "--cov-report=term-missing:skip-covered",
+  "--cov-report=xml",
+  "--cov=pyrig_private",
+  "--dist=worksteal",
+  "--numprocesses=auto",
+  "--report-chars=a",
+]
+filterwarnings = [
+  "error",
+]
+strict = true
+testpaths = [
+  "tests",
+]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+ignore = [
+  "CPY001",
+]
+select = [
+  "ALL",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = [
+  "S101",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
