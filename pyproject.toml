@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-private"
-version = "0.1.10"
+version = "0.1.15"
 description = "A pyrig plugin for private repository functionality."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -27,7 +27,6 @@ classifiers = [
 ]
 dependencies = [
   "pyrig>=18.94.5",
-  "pyrig-runtime>=3.24.2",
 ]
 
 [project.urls]
@@ -51,6 +50,7 @@ dev = [
   "prek>=0.5.4",
   "pyflakes>=4.0.1",
   "pyrig-opensource>=1.0.0",
+  "pyrig-plugin>=0.1.0",
   "pyrig-private-overrides>=1.0.0",
   "pyrig-pypi>=3.20.47",
   "pytest>=9.1.1",
@@ -80,7 +80,7 @@ root = "src"
 
 [tool.deptry.per_rule_ignores]
 DEP002 = [
-  "pyrig-runtime",
+  "pyrig",
 ]
 
 [tool.pytest]
