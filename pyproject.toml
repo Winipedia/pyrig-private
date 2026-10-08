@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-private"
-version = "0.1.23"
+version = "0.1.25"
 description = "A pyrig plugin for private repository functionality."
 readme = "README.md"
 requires-python = ">=3.12"
