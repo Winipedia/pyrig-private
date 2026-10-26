@@ -12,8 +12,8 @@ class TestRepositorySettingsConfigFile:
         """Test that inherited settings include private visibility."""
         settings = RepositorySettingsConfigFile.I
         configs = settings.configs()
-        repository_key = settings.repository_key()
-        assert configs[repository_key]["visibility"] == settings.visibility()
+        repo_key = settings.repo_key()
+        assert configs[repo_key]["visibility"] == settings.visibility()
 
     def test_visibility(self) -> None:
         """Test the configured repository visibility."""

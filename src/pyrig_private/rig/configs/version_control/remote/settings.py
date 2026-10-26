@@ -17,7 +17,7 @@ class RepositorySettingsConfigFile(BaseRepositorySettingsConfigFile):
             The inherited settings with private repository visibility.
         """
         configs = super()._configs()
-        configs[self.repository_key()]["visibility"] = self.visibility()
+        configs[self.repo_key()]["visibility"] = self.visibility()
         return configs
 
     def visibility(self) -> str:
