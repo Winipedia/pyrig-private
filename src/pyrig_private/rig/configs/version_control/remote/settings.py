@@ -1,6 +1,6 @@
 """Repository-level settings and protection ruleset configuration for GitHub."""
 
-from typing import Any
+from typing import Any, override
 
 from pyrig.rig.configs.version_control.remote.settings import (
     RepositorySettingsConfigFile as BaseRepositorySettingsConfigFile,
@@ -10,6 +10,7 @@ from pyrig.rig.configs.version_control.remote.settings import (
 class RepositorySettingsConfigFile(BaseRepositorySettingsConfigFile):
     """Override repository settings for private GitHub repositories."""
 
+    @override
     def _configs(self) -> dict[str, Any]:
         """Add private visibility to the inherited repository settings.
 
