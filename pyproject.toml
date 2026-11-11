@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-private"
-version = "0.3.56"
+version = "0.3.57"
 description = "A pyrig plugin for private repository functionality."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -27,7 +27,7 @@ classifiers = [
   "Typing :: Typed",
 ]
 dependencies = [
-  "pyrig>=19.2.0",
+  "pyrig>=19.29.0",
 ]
 
 [project.urls]
