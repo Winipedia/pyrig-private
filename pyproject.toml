@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-private"
-version = "0.3.67"
+version = "0.3.68"
 description = "A pyrig plugin for private repository functionality."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -132,6 +132,13 @@ strict = true
 ALL = "enable"
 key-ordering = "disable"
 yaml-directive = "disable"
+
+[tool.typos.default]
+extend-ignore-re = [
+  "(?m)^.*spellchecker:disable-line.*$",
+  "(?m)^.*spellchecker:disable-next-line.*\n.*",
+]
+locale = "en-us"
 
 [tool.vulture]
 paths = [
