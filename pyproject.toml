@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-private"
-version = "0.3.75"
+version = "0.3.81"
 description = "A pyrig plugin for private repository functionality."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -132,6 +132,9 @@ strict = true
 ALL = "enable"
 key-ordering = "disable"
 yaml-directive = "disable"
+
+[tool.ty.rules]
+all = "error"
 
 [tool.typos.default]
 extend-ignore-re = [
