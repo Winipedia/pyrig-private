@@ -67,12 +67,12 @@ uv run pyrig sync
 ```
 
 This updates the local configuration files. GitHub is updated when the
-generated `.github/configure.sh` runs, such as in pyrig's deployment workflow.
+generated `scripts/configure-repo.sh` runs, such as in pyrig's deployment workflow.
 
 ## Repository visibility
 
 The generated configuration adds `"visibility": "private"` to the repository
-settings. When `.github/configure.sh` applies those settings, GitHub updates
+settings. When `scripts/configure-repo.sh` applies those settings, GitHub updates
 the repository through its repository settings API. This is enforced each time
 the configuration script runs.
 
